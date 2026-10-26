@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/item_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+item_id = &"bandage"
+display_name = "野战绷带"
+description = "恢复 25 点生命值。"
+max_stack = 5
+weight = 0.25
+heal_amount = 25.0

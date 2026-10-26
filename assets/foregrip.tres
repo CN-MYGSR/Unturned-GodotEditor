@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="AttachmentDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/items/attachment_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+item_id = &"foregrip"
+display_name = "垂直握把"
+description = "降低后坐力。"
+max_stack = 1
+weight = 0.2
+kind = 1
+caliber = 1
+recoil_multiplier = 0.7
+spread_multiplier = 0.9

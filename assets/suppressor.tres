@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AttachmentDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/items/attachment_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+item_id = &"suppressor"
+display_name = "消音器"
+description = "降低枪声传播距离。"
+max_stack = 1
+weight = 0.5
+kind = 3
+caliber = 1
+is_silenced = true
+gunshot_rolloff_multiplier = 0.4
+spread_multiplier = 1.1

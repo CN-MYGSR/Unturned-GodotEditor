@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/item_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+item_id = &"spear"
+display_name = "简易长矛"
+description = "近战武器，挥击造成 25 点伤害。"
+max_stack = 1
+weight = 1.5
+use_type = 2
+damage = 25.0
+use_cooldown = 0.6
+equipment_slot = &"primary"
+animation_action = &"melee"
+voice_event = &"punch"

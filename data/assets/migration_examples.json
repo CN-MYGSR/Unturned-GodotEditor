@@ -1,0 +1,6 @@
+[
+  {"type":"item","id":"field_bandage","guid":"d7a608f7-11ea-4c1c-9d79-010000000001","name":"Field Bandage","max_stack":5,"weight":0.25,"heal":25,"category":"medical"},
+  {"type":"object","id":"supply_crate","guid":"d7a608f7-11ea-4c1c-9d79-010000000002","name":"Supply Crate","scene":"res://scenes/level_test_crate.tscn","collision":true,"interactable":true,"tags":["loot","wood"]},
+  {"type":"spawn_table","id":"medical_loot","guid":"d7a608f7-11ea-4c1c-9d79-010000000003","name":"Medical Loot","entries":[{"asset_id":"field_bandage","weight":5},{"asset_id":"unknown_item","weight":1}]},
+  {"type":"level","id":"migration_test_level","guid":"d7a608f7-11ea-4c1c-9d79-010000000004","name":"Migration Test Level","size":[512,512],"gravity":9.8,"placements":[{"asset_id":"supply_crate","position":[2,0,3],"rotation":[0,45,0],"scale":[1,1,1],"region":[0,0]}],"spawn_points":[{"type":"player","position":[0,1,0]},{"type":"zombie","position":[8,0,4],"weight":2}]}
+]

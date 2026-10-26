@@ -1,0 +1,69 @@
+[
+	{
+		"type": "item",
+		"id": "json_rifle",
+		"name": "JSON 步枪",
+		"category": "weapon",
+		"Useable": "Gun",
+		"Range": 150,
+		"Player_Damage": 28,
+		"Ammo_Max": 30,
+		"Magazine": "json_magazine",
+		"Firerate": 7,
+		"Reload_Time": 2.5,
+		"Hammer_Time": 0.3,
+		"Semi": true,
+		"Auto": true,
+		"Safety": true,
+		"Spread_Angle_Degrees": 2.0,
+		"Spread_Aim": 0.45,
+		"Recoil_Min_X": 0.2,
+		"Recoil_Min_Y": 0.1,
+		"Recoil_Max_X": 0.75,
+		"Recoil_Max_Y": 0.4,
+		"Hook_Sight": true,
+		"Hook_Grip": true,
+		"Hook_Barrel": true,
+		"Hook_Tactical": true,
+		"Caliber": 2,
+		"Alert_Radius": 40
+	},
+	{
+		"type": "item",
+		"id": "json_scope",
+		"name": "JSON 四倍镜",
+		"attachment": "sight",
+		"Zoom": 4.0,
+		"Caliber": 2,
+		"Spread_Multiplier": 0.75,
+		"Aim_Duration_Multiplier": 1.1
+	},
+	{
+		"type": "item",
+		"id": "json_grip",
+		"name": "JSON 握把",
+		"attachment": "grip",
+		"Caliber": 2,
+		"Recoil_Multiplier": 0.65,
+		"Spread_Multiplier": 0.9
+	},
+	{
+		"type": "item",
+		"id": "json_magazine",
+		"name": "JSON 弹匣",
+		"attachment": "magazine",
+		"Amount": 30,
+		"Caliber": 2,
+		"Pellets": 1
+	},
+	{
+		"type": "item",
+		"id": "json_suppressor",
+		"name": "JSON 消音器",
+		"attachment": "barrel",
+		"Caliber": 2,
+		"Silenced": true,
+		"Gunshot_Rolloff_Distance_Multiplier": 0.35,
+		"Spread_Multiplier": 1.1
+	}
+]

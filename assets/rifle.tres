@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="GunDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/items/gun_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+item_id = &"rifle"
+display_name = "突击步枪"
+description = "全自动步枪，使用 5.56 弹匣。"
+max_stack = 1
+weight = 3.5
+use_type = 3
+equipment_slot = &"primary"
+animation_action = &"shoot"
+voice_event = &"shoot"
+range = 120.0
+damage = 32.0
+ammo_per_shot = 1
+magazine_capacity = 30
+default_magazine = &"rifle_magazine"
+default_ammo_max = 30
+firerate = 9
+reload_time = 2.2
+has_safety = true
+has_semi = true
+has_auto = true
+spread_angle_degrees = 1.8
+spread_aim = 0.4
+recoil_min = Vector2(0.25, 0.12)
+recoil_max = Vector2(0.7, 0.35)
+aiming_recoil_multiplier = 0.65
+has_sight = true
+has_grip = true
+has_tactical = true
+has_barrel = true
+caliber = 1
+alert_radius = 48.0

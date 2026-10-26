@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AttachmentDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/items/attachment_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+item_id = &"red_dot"
+display_name = "红点瞄具"
+description = "2 倍放大，提升瞄准精度。"
+max_stack = 1
+weight = 0.3
+kind = 0
+caliber = 1
+zoom = 2.0
+spread_multiplier = 0.85
+aim_duration_multiplier = 0.9

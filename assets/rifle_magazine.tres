@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="AttachmentDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/items/attachment_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+item_id = &"rifle_magazine"
+display_name = "步枪弹匣"
+description = "30 发 5.56 弹匣。"
+max_stack = 1
+weight = 0.4
+kind = 4
+caliber = 1
+capacity = 30
+pellets = 1

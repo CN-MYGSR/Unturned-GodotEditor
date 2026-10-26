@@ -1,0 +1,18 @@
+﻿# Godot / build outputs
+.godot/
+build/
+*.exe
+*.pck
+*.tmp
+*.log
+
+# Local debug captures / scratch scripts
+docs/_*.png
+scratch_*.gd
+scratch_*.gd.uid
+
+# Shell/test output files
+o.txt
+e.txt
+*.out
+*.err

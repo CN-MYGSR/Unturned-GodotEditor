@@ -1,0 +1,64 @@
+[gd_scene load_steps=23 format=3]
+
+[ext_resource type="Script" path="res://scripts/maps/pei_map.gd" id="1_map"]
+[ext_resource type="Script" path="res://scripts/player_controller.gd" id="2_player"]
+[ext_resource type="Script" path="res://scripts/player_life.gd" id="3_life"]
+[ext_resource type="Script" path="res://scripts/inventory.gd" id="4_inventory"]
+[ext_resource type="Script" path="res://scripts/ui/game_hud.gd" id="5_hud"]
+[ext_resource type="Script" path="res://scripts/player/player_stance.gd" id="6_stance"]
+[ext_resource type="Script" path="res://scripts/player/player_equipment.gd" id="7_equipment"]
+[ext_resource type="Script" path="res://scripts/player/player_animation_driver.gd" id="8_animation"]
+[ext_resource type="Script" path="res://scripts/player/player_clothing.gd" id="9_clothing"]
+[ext_resource type="Script" path="res://scripts/player/player_voice.gd" id="10_voice"]
+[ext_resource type="Script" path="res://scripts/player/player_presentation.gd" id="11_presentation"]
+[ext_resource type="Script" path="res://scripts/player/player_skills.gd" id="12_skills"]
+[ext_resource type="Script" path="res://scripts/player/player_quests.gd" id="13_quests"]
+[ext_resource type="Resource" path="res://assets/bandage.tres" id="14_bandage"]
+[ext_resource type="Resource" path="res://assets/spear.tres" id="15_spear"]
+[ext_resource type="Resource" path="res://assets/shirt.tres" id="16_shirt"]
+[ext_resource type="Resource" path="res://assets/rifle.tres" id="17_rifle"]
+[ext_resource type="Resource" path="res://assets/rifle_magazine.tres" id="18_magazine"]
+[ext_resource type="Resource" path="res://assets/red_dot.tres" id="19_red_dot"]
+[ext_resource type="Resource" path="res://assets/foregrip.tres" id="20_foregrip"]
+[ext_resource type="Resource" path="res://assets/suppressor.tres" id="21_suppressor"]
+
+[sub_resource type="CapsuleShape3D" id="PlayerShape"]
+radius = 0.35
+height = 1.8
+
+[node name="PEIMap" type="Node3D"]
+script = ExtResource("1_map")
+
+[node name="GameHUD" type="CanvasLayer" parent="."]
+script = ExtResource("5_hud")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+script = ExtResource("2_player")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+shape = SubResource("PlayerShape")
+[node name="Head" type="Node3D" parent="Player"]
+position = Vector3(0, 0.55, 0)
+[node name="Camera3D" type="Camera3D" parent="Player/Head"]
+current = true
+[node name="Life" type="Node" parent="Player"]
+script = ExtResource("3_life")
+[node name="Inventory" type="Node" parent="Player"]
+script = ExtResource("4_inventory")
+item_definitions = Array[Resource]([ExtResource("14_bandage"), ExtResource("15_spear"), ExtResource("16_shirt"), ExtResource("17_rifle"), ExtResource("18_magazine"), ExtResource("19_red_dot"), ExtResource("20_foregrip"), ExtResource("21_suppressor")])
+[node name="Skills" type="Node" parent="Player"]
+script = ExtResource("12_skills")
+[node name="Quests" type="Node" parent="Player"]
+script = ExtResource("13_quests")
+[node name="Stance" type="Node" parent="Player"]
+script = ExtResource("6_stance")
+[node name="Equipment" type="Node" parent="Player"]
+script = ExtResource("7_equipment")
+[node name="AnimationDriver" type="Node" parent="Player"]
+script = ExtResource("8_animation")
+[node name="Clothing" type="Node3D" parent="Player"]
+script = ExtResource("9_clothing")
+[node name="VoiceAudio" type="AudioStreamPlayer3D" parent="Player"]
+[node name="Voice" type="Node" parent="Player"]
+script = ExtResource("10_voice")
+[node name="Presentation" type="Node" parent="Player"]
+script = ExtResource("11_presentation")
